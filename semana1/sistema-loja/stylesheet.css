@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+    background-color: rgba(100, 189, 189, 0.5);
+    color: white;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    background-image: url(./img/fundo-header.jpg);
+    background-size: cover;
+}
+
+.menu {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+}
+
+a {
+    color: white;
+    margin: 0 0 30px 30px;
+    font-weight: 200;
+}
+
+.conteudo {
+    margin: 0 0 20px 20px;
+}
+
+.descricao {
+    font-weight: 100;
+    font-style: italic;
+    margin: 20px 20px 20px 20px;
+    text-align: center;
+}
+
+.img-index {
+    width: 120px;
+    border-radius: 50%;
+    border: solid 4px #000000;
+    padding: 10px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background-color: gray;
+    color: white;
+    text-align: center;
+}
+
+.img-footer {
+    width: 30px;
+    height: 30px;
+    display: inline;
+}
+
+table {
+    border: 1px solid #000000;
+    padding: 5px;
+    width: 50%;
+    overflow: auto;
+}
+
+th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    background-color: #000000;
+    color: white;
+  }
+
+.img-tabela {
+    width: 150px;
+}
