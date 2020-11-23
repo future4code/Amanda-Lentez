@@ -9,6 +9,10 @@
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 h2 {
     background-color: #fe7e02;
     padding: 10px 5px 10px 5px;
@@ -47,6 +51,7 @@ div img {
     display: block;
     margin: auto;
     margin-top: 50px;
+    border: none;
 }
 
 .botao-amarelo:hover {
@@ -116,6 +121,11 @@ td button {
     height: 30px;
     border-radius: 5px;
     color: black;
+    border-color: white;
+}
+
+td button:hover{
+    background-color: #c44f00;
 }
 
 .container-do-search {
@@ -123,16 +133,25 @@ td button {
     height: 100px;
 }
 
+.button-voltar {
+    text-align: center;
+    margin: 0;
+    margin-top: 50px;
+}
 
 #back-button {
     background-color: white;
-    width: 100px;
-    height: 20px;
+    height: 15px;
     border: 1px solid black;
     border-radius: 5px;
     font-size: 10px;
     color: black;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
 
 #back-button:hover {
-    background-color: #635a3d
+    background-color: #000000;
+    color: white;
 }
