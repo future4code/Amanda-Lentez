@@ -25,9 +25,21 @@
         <p class="texto-header">Graphic and UX Designer. Illustrator and Programmer in training.</p>
     </div>
 
-    <div class="body">
-        <p>Hey there! My name is Amanda, a brazilian designer, with experience in both graphical and user experience fields.</p>
-        <a href="./bio.html"><button type="button">More about me!</button></a>
+    <div class="form">
+        <div class="form-heading">Entre em contato comigo!</div>
+        <form action="" method="post">
+        <label for="field1"><span>Nome <span class="required">*</span></span><input type="text" class="input-field" name="field1" value="" /></label>
+        <label for="field2"><span>E-mail <span class="required">*</span></span><input type="text" class="input-field" name="field2" value="" /></label>
+        <label for="field3"><span>Assunto</span><select name="field3" class="select-field">
+        <option value="Contratar serviços">Contratar serviços</option>
+        <option value="Quotar">Pesquisa de preço</option>
+        <option value="Parcerias">Parcerias</option>
+        <option value="Outros">Outros Assuntos</option>
+        </select></label>
+        <label for="field5"><span>Insira a sua mensagem!<span class="required">*</span></span><textarea name="field4" class="textarea-field"></textarea></label>
+        
+        <label><span> </span><input type="submit" value="Enviar" /></label>
+        </form>
     </div>
 
     <div class="footer">
@@ -38,5 +50,6 @@
         </div>
         
     </div>
+
 </body>
 </html>
