@@ -60,6 +60,10 @@ a {
     display: inline;
 }
 
+.img-tabela {
+    width: 150px;
+}
+
 table {
     border: 1px solid #000000;
     padding: 5px;
@@ -75,6 +79,3 @@ th {
     color: white;
   }
 
-.img-tabela {
-    width: 150px;
-}
