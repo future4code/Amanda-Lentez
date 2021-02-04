@@ -79,3 +79,56 @@ th {
     color: white;
   }
 
+.container-do-search {
+    margin-top: 20px;
+    height: 100px;
+}
+
+.button-voltar {
+    text-align: center;
+    margin: 0;
+    margin-top: 50px;
+}
+
+#back-button {
+    background-color: white;
+    height: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 10px;
+    color: black;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+
+#back-button:hover {
+    background-color: #000000;
+    color: white;
+}
+
+
+.tabela-compras {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+td button {
+    background-color: #fadf63;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    color: black;
+    border-color: white;
+}
+
+td button:hover{
+    background-color: #c44f00;
+}
+
+.icone {
+    height: 15px;
+    width: 15px;
+}
+

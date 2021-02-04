@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./stylesheet.css" />
+    <title>Adicionar Produto</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Save Brazil</h1>
+    </div>
+    
+    <div class="menu">
+        <a href="./index.html">PÁGINA INICIAL</a>
+        <a href="./ctrl-estoque.html">CONTROLE DE ESTOQUE</a>
+        <a href="./add-produto.html">ADICIONAR PRODUTO</a>
+        <a href="./funcionarios.html">FUNCIONÁRIOS</a>
+        <a href="./comprar.html">NOVA VENDA</a>
+        <a href="./historico-vendas.html">HISTÓRICO DE VENDAS</a>
+    </div>
+
+    <div class="conteudo">
+        <h2>Nova venda</h2>
+        <form action="#">
+            <div>
+                <label for="add-produto-venda">Produto: </label>
+                <select id="add-produto-venda" name="add-produto-venda">
+                <option value="ozonioterapia">Dose de ozônio</option>
+                <option value="cloroquina">Cloroquina</option>
+                <option value="ivermectina">Ivermectina</option>
+                <option value="azitromicina">Azitromicina</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="quantidade">Quantidade: </label>
+                <input type="number" id="quantidade" name="quantidade">
+            </div>
+            <br>
+            <div>
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data">
+            </div>
+            <br>
+            <div>
+                <label for="forma-pagamento">Forma de pagamento:</label>
+                <br>
+                <input type="radio" id="debito" name="forma-pagamento" value="debito">
+                <label for="debito">Débito</label><br>
+                <input type="radio" id="credito" name="forma-pagamento" value="credito">
+                <label for="credito">Crédito</label><br>
+            </div>
+            <br><br>
+            <div class="form-add">
+                <button type="submit" onclick="alert('Produto adicionado ao carrinho!')">Adicionar</button>
+                <input type="reset">
+            </div>
+        </form>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="conteudo">
+    <table>
+        <tr>
+            <th>Produto</th>
+            <th>Valor</th>
+            <th>Quantidade</th>
+            <th>Data</th>
+            <th>Forma de pagamento</th>
+        </tr>
+
+        <tr>
+            <td> Dose de Ozônio </td>
+            <td> R$89.000 </td>
+            <td> 1 </td>
+            <td> 1/7/1 </td>
+            <td> Débito </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
