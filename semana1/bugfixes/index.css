@@ -67,6 +67,9 @@ div img {
     width: 15px;
 }
 
+.icone:hover {
+    opacity: .5;
+}
 
 /** 
   *
