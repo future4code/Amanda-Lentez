@@ -149,6 +149,9 @@ td button:active {
     height: 100px;
 }
 
+.container-button{
+    margin: 0 auto;
+}
 
 #back-button {
     background-color: white;
