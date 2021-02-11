@@ -1,0 +1,103 @@
+@media screen and (max-width: 800px){
+    #first-block {
+        width: 100%;
+    }
+
+    .black-block, .white-block {
+        width: 100%;
+        margin: 1vh;
+    }
+
+    .blue-block, .yellow-block, .green-block {
+        width: 27vw;
+        margin: 1vh;
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1024px) {
+    #first-block, .green-block {
+        width: 100%;
+    }
+
+    .black-block, .white-block {
+        margin-top: 2vh;
+        margin: 1vh;
+    }
+}
+
+#main-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: normal;
+    margin: 0;
+}
+
+#first-block {
+    background-color: red;
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+    /* margin-top: 5vh; */
+    flex-wrap: wrap;
+    height: 10vh;
+}
+
+.blue-block {
+    background-color: blue;
+    display: flex;
+    width: 27vw;
+    /* margin: auto; */
+    justify-content: space-between;
+    margin-top: 5vh;
+    flex-wrap: wrap;
+    height: 20vh;
+}
+
+.yellow-block {
+    background-color: yellow;
+    display: flex;
+    width: 27vw;
+    /* margin: auto; */
+    justify-content: space-between;
+    margin-top: 5vh;
+    flex-wrap: wrap;
+    height: 20vh;
+}
+
+.green-block {
+    background-color: green;
+    display: flex;
+    width: 27vw;
+    /* margin: auto; */
+    justify-content: space-between;
+    margin-top: 5vh;
+    flex-wrap: wrap;
+    height: 20vh;
+}
+
+.black-block {
+    background-color: black;
+    color: white;
+    display: flex;
+    width: 43vw;
+    /* margin: auto; */
+    justify-content: space-between;
+    margin-top: 5vh;
+    flex-wrap: wrap;
+    height: 35vh;
+}
+
+.white-block {
+    background-color: white;
+    display: flex;
+    width: 27vw;
+    /* margin: auto; */
+    justify-content: space-between;
+    margin-top: 5vh;
+    flex-wrap: wrap;
+    height: 20vh;
+}
