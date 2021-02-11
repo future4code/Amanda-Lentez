@@ -1,6 +1,16 @@
-@media screen and (max-width: 800px){
+@media screen and (min-device-width : 320px) and (max-device-width : 420px) {
+    /* celulares */
+    }
+
+@media screen and (min-device-width: 421px) and (max-width: 800px) {
+   /* tablets */
     #first-block {
         width: 100%;
+    }
+
+    .green-block {
+        width: 100%;
+        display: block;
     }
 
     .black-block, .white-block {
@@ -15,6 +25,7 @@
 }
 
 @media screen and (min-width: 801px) and (max-width: 1024px) {
+    /* computadores */
     #first-block, .green-block {
         width: 100%;
     }
@@ -30,9 +41,14 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
-    align-content: normal;
+    align-items: flex-start;
+    align-content: flex-start;
     margin: 0;
+}
+
+div{
+    margin: solid black 1px;
+    text-align: center;
 }
 
 #first-block {
