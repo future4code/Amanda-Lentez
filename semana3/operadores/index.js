@@ -67,8 +67,64 @@ console.log(favFoods[3])
 console.log(favFoods[4])*/
 
 /*Exercício 4*/
+/*let perguntas = ["Já tomou cloroquina?", "Já tomou ivermectina?", "Gosta de suco de laranja?"]
 
 let respostas = [false, false, false]
 
 console.log(perguntas[0], respostas[0])
 console.log(perguntas[1], respostas[1])
+console.log(perguntas[2], respostas[2])*/
+
+//Exercicio 1//
+/*const bool3 = true
+
+let resultado = true && false
+console.log("a. ", false)
+
+resultado = true && false && true
+console.log("b. ", false)
+
+resultado = !resultado && (true || true)
+console.log("c. ", true)
+
+console.log("e. ", typeof boolean)*/
+
+
+//Exercício 2//
+
+
+/*let array
+console.log('a. ', [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13])
+
+array = null
+console.log('b. ', [])
+
+array = [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+console.log('c. ', 11)
+
+let i = 0
+console.log('d. ', array[3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 0])
+
+array[i+1] = 19
+console.log('e. ', array[0+1])
+
+const valor = array[i+6]
+console.log('f. ', array[0+6])*/
+
+//Exercício 1//
+
+/*const idade = prompt ("1. Qual é o seu nome?")
+const idadeAmigo = prompt ("2. Qual é a sua idade?")
+
+const diferenca = Number(idadeAmigo) - Number(idade)
+console.log("A diferença de idades é:  ", diferenca)
+
+const maiorMenor = Number(idadeAmigo) < Number(idade)
+console.log("A sua idade é maior do que a to seu amigo: ", maiorMenor)*/
+
+//Exercício 2//
+
+/*const numero = prompt ("Insira um número par")
+let restoDivisao = numero%2
+console.log("O resto da divisão é: ", restoDivisao)*/
+
