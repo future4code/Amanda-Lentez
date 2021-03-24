@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import axios from 'axios';
 
-const DivCadastro = styled.div`
+const DivSignUp = styled.div`
     border: 1px solid black;
     width: 400px;
     height: 250px;
@@ -10,7 +10,7 @@ const DivCadastro = styled.div`
     margin-top: 50px;
 `
 
-const InputNome = styled.input`
+const InputName = styled.input`
     width: 100px;
     height: 10px;
 `
@@ -20,23 +20,23 @@ const InputEmail = styled.input`
     height: 10px;
 `
 
-const BotaoSalvar = styled.button`
+const BtnSave = styled.button`
     width: 100px;
     height: 30px;
     color: white;
 `
 
 
-class Usuarios extends React.Component {
+class Users extends React.Component {
 
     state = {
-        inputNome: "", 
+        inputName: "", 
         inputEmail: "", 
     };
 
-    criarUsuario = () =>{
+    createUser = () =>{
         const body = {
-            name: this.state.inputNome, 
+            name: this.state.inputName, 
             email: this.state.inputEmail  
         };
 
@@ -50,21 +50,21 @@ class Usuarios extends React.Component {
             }
         )
         request
-        .then((resposta) =>{
+        .then((response) =>{
             alert("User criado! Parabéns!")
             this.props.getAll() 
         })
-        .catch((erro) =>{
+        .catch((err) =>{
             alert("Não deu certo :( Tente novamente ou retorne mais tarde.")
         })
     }    
 
     
-    getInputNome = (event) => {
+    getInputName = (event) => {
         this.setState({
-            inputNome: event.target.value
+            inputName: event.target.value
         })
-        console.log(this.state.inputNome)
+        console.log(this.state.inputName)
     }
 
     getInputEmail = (event) => {
@@ -76,15 +76,15 @@ class Usuarios extends React.Component {
 
     render() {
         return (
-            <DivCadastro>
+            <DivSignUp>
                 <p><strong>Nome:</strong></p>
-                <InputNome onChange={this.getInputNome} value={this.state.valorInput}/>
+                <InputName onChange={this.getInputName} value={this.state.valorInput}/>
                 <p><strong>Email:</strong></p>
                 <InputEmail onChange={this.getInputEmail}/>
-                <p><BotaoSalvar onClick={this.criarUsuario}>Criar usuario</BotaoSalvar></p>
-            </DivCadastro>
+                <p><BtnSave onClick={this.createUser}>Criar usuario</BtnSave></p>
+            </DivSignUp>
         )
     }
 }
 
-export default Usuarios;
+export default Users;
