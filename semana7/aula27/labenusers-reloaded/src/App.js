@@ -8,8 +8,14 @@ import UserScreen from './components/UserScreen';
 import { baseUrl, axiosConfig } from './components/Parameters';
 
 const BtnList = styled.button`
-    width: 200px;
-    height: 20px;
+    width: 400px;
+    height: 50px;
+    background-color: #79b524;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FFFFFF;
 `
 
 class App extends React.Component {

@@ -3,11 +3,12 @@ import styled from 'styled-components';
 import axios from 'axios';
 
 const DivSignUp = styled.div`
-    border: 1px solid black;
     width: 400px;
-    height: 250px;
+    height: 350px;
     margin: auto;
     margin-top: 50px;
+    padding-top: 20px;
+    box-shadow: 2px 2px 3px #888888;
 `
 
 const InputName = styled.input`
@@ -78,6 +79,7 @@ class Users extends React.Component {
     render() {
         return (
             <DivSignUp>
+                <h2>Cadastro usuário</h2>
                 <p><strong>Nome:</strong></p>
                 <InputName onChange={this.getInputName} value={this.state.valueInput}/>
                 <p><strong>Email:</strong></p>
