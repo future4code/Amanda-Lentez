@@ -11,6 +11,7 @@ const Container = styled.div`
     height: 48vh;
     width: 44vw;
     border: 2px solid grey;
+    border-radius: 50px;
     padding: 12px;
     margin: 40px;
  img {

@@ -8,30 +8,89 @@ import iconeCoracaoBranco from '../../img/favorite-white.svg'
 import iconeCoracaoPreto from '../../img/favorite.svg'
 import iconeComentario from '../../img/comment_icon.svg'
 
-const Post = (props) => {
+export default function Post() {
+  const [curtido, setCurtido] = useState (false)
+  const [numeroCurtidas, setNumeroCurtidas] = useState (0)
+  const [comentando, setComentando] = useState(false)
+  const [numeroComentarios, setNumeroComentarios] = useState (0)
+  const [comentarios, setComentarios] = useState ([])
+  // const [onClickCurtida, setOnClickCurtida] = useState(0)
+  // const [onClickComentario, setOnClickComentario] = useState('')
+  // const [enviarComentario, setEnviarComentario] = useState()
+
+//   const handleOnClickCurtida = (event) => {
+//     setOnClickCurtida(event.target.value)
+//   }
+//   const handleOnClickComentario = (event) => {
+//     setOnClickComentario(event.target.value)
+//   }
+//   const handleEnviarComentario = (event) => {
+//     setEnviarComentario(event.target.value)
+//   }
+
+// }
+// const Post = (props) => {
 
 
-  const onClickCurtida = () => {
-  };
+  // const onClickCurtida = () => {
+  // };
 
-  const onClickComentario = () => {
-  };
+  // const onClickComentario = () => {
+  // };
 
-  const enviarComentario = (comentario) => {
+  // const enviarComentario = (comentario) => {
+  // }
+
+}
+
+onClickCurtida = () => {
+    if (curtido) {
+    setCurtido(!curtido)
+    setNumeroCurtidas(numeroCurtidas - 1)
+  } else {
+    setCurtido(!curtido)
+    setNumeroCurtidas(numeroCurtidas + 1)
+  }
+}
+
+const iconeCurtida = curtido ? (iconeCoracaoPreto) : (iconeCoracaoBranco)
+
+onClickComentario = () => {
+ setComentando(!comentando)
+}
+
+const caixaDeComentario = comentando ? (
+  <SecaoComentario enviarComentario={enviarComentario}/>
+) : (
+  comentarios.map(comentario => {
+    return (
+      <CommentContainer>
+        <p>{comentario}</p>
+      </CommentContainer>
+    )
+  })
+)
+
+enviarComentario = (comentario) => {
+  const listaDeComentarios = [...comentarios, comentario]
+
+    comentarios(listaDeComentarios)
+    comentando(false)
+    numeroComentarios(numeroComentarios + 1)
   }
 
   return (
     <PostContainer>
       <PostHeader>
-        <UserPhoto src={props.fotoUsuario} alt={'Imagem do usuario'}/>
-        <p>{props.nomeUsuario}</p>
+        <UserPhoto src={fotoUsuario} alt={'Imagem do usuario'}/>
+        <p>{nomeUsuario}</p>
       </PostHeader>
 
-      <PostPhoto src={props.fotoPost} alt={'Imagem do post'}/>
+      <PostPhoto src={fotoPost} alt={'Imagem do post'}/>
 
       <PostFooter>
         <IconeComContador
-          // icone={iconeCurtida}
+          icone={iconeCurtida}
           onClickIcone={onClickCurtida}
           // valorContador={numeroCurtidas}
         />
@@ -42,9 +101,8 @@ const Post = (props) => {
           // valorContador={numeroComentarios}
         />
       </PostFooter>
-      {/* {caixaDeComentario} */}
+      {caixaDeComentario}
     </PostContainer>
   )
+  }
 }
-
-export default Post

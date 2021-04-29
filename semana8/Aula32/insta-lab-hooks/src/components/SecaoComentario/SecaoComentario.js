@@ -12,6 +12,9 @@ const InputComment = styled.input `
     margin-right: 5px;
 `
 
+export default function SecaoComentario() {
+	const [enviarComentario] = useState()
+}
 const SecaoComentario = (props) => {
 
 

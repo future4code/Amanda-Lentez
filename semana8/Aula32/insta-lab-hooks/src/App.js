@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Post from './components/Post/Post';
-import styled from "styled-components"
+import styled from "styled-components";
 
 const AppContainer = styled.div `
   display: flex;
@@ -9,6 +9,9 @@ const AppContainer = styled.div `
   align-items: center;
 `
 
+// export default function App () {
+//   const []
+// }
 const App = () => {
   return (
     <AppContainer>
